@@ -10,7 +10,7 @@ services:
         VARIANT: 2.7
         NODE_VERSION: 14.16.1 
     volumes:
-      - ..:/workspace:cached
+      - ..:/workspace:delegated
       - gem_cache:/usr/local/bundle/gems
       - $HOME/.ssh/:/home/vscode/.ssh/
     command: /bin/sh -c "while sleep 1000; do :; done"
